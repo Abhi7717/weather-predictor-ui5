@@ -14,7 +14,7 @@
     "@sap/ux-ui5-tooling": "1"
   },
   "scripts": {
-    "start": "serve -s dist -l $PORT",
+    "start": "serve -s dist -l 10000",
     "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flp.html#app-preview\"",
     "build": "ui5 build --all",
     "deploy": "fiori verify",
