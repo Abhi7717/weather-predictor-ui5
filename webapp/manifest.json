@@ -84,7 +84,8 @@
       "targets": {
         "TargetView1": {
           "id": "View1",
-          "name": "View1"
+          "name": "View1",
+          "type": "XML"
         }
       }
     },
