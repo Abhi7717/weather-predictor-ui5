@@ -1,0 +1,66 @@
+/* Make sure these styles are in your CSS file */
+.default-bg .sapMPage {
+    /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    min-height: 100vh;
+}
+
+.clear-sky-bg .sapMPage {
+    /* background: linear-gradient(135deg, #f2ce56 0%, #2F80ED 100%); */
+    background: url("https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    /* background-position: center; Centers the image */
+    /* min-height: 100vh; */
+}
+
+.cloudy-bg .sapMPage {
+    /* background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%); */
+    background: url("https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    /* background-position: center; Centers the image */
+    /* min-height: 100vh; */
+}
+
+.rainy-bg .sapMPage {
+    /* background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%); */
+    background: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&w=1200");
+    background-size: cover; 
+    /* background-position: center; Centers the image */
+    /* min-height: 100vh; */
+}
+
+.stormy-bg .sapMPage {
+    /* background: linear-gradient(135deg, #1F1C2C 0%, #928DAB 100%); */
+    background: url("https://images.pexels.com/photos/922612/pexels-photo-922612.jpeg?auto=compress&cs=tinysrgb&w=1200");
+    background-size: cover;
+       /* background-position: center; Centers the image */
+    /* min-height: 100vh; */
+}
+
+.snowy-bg .sapMPage {
+    /* background: linear-gradient(135deg, #E0EAFC 0%, #CFDEF3 100%); */
+    background: url("https://images.pexels.com/photos/954710/pexels-photo-954710.jpeg?auto=compress&cs=tinysrgb&w=1200");
+    background-size: cover; 
+        /* background-position: center; Centers the image */
+    /* min-height: 100vh; */
+}
+
+.foggy-bg .sapMPage {
+    /* background: linear-gradient(135deg, #606c88 0%, #3f4c6b 100%); */
+    background: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=1200");
+    background-size: cover;
+    /* background-position: center; Centers the image */
+    /* min-height: 100vh; */
+}
+
+/* Card styling */
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+/* Make sure content is readable on dark backgrounds */
+.sapMText, .sapMLabel {
+    color: inherit !important;
+}

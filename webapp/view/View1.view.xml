@@ -1,0 +1,45 @@
+<mvc:View
+  controllerName="aditi.gyansys.project7.controller.View1"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.f"
+  xmlns:card="sap.f.cards"
+  displayBlock="true">
+  
+  <Page title="Weather App" showHeader="true" class="sapUiResponsiveContentPadding">
+    <content>
+      <Panel class="sapUiResponsiveMargin" width="auto">
+        <Text text="Enter the city"/>
+        <VBox>
+          <Input id="hlo" type="Text" width="100%"/>
+          <Button id="hello" press="onPress" text="SUBMIT" type="Emphasized"/>
+        </VBox>
+      </Panel>
+      
+      <f:Card width="auto" class="sapUiResponsiveMargin weather-card">
+        <f:header>
+          <card:Header
+            title="Current Weather"
+            subtitle="Country: {weather>/name}, {weather>/sys/country}"
+            statusText="Temp: {weather>/main/temp}°C"/>
+        </f:header>
+        <f:content>
+          <VBox class="sapUiSmallMargin">
+            <HBox justifyContent="SpaceBetween">
+              <Label text="Conditions:" class="sapUiSmallMarginEnd"/>
+              <Text text="{weather>/weather/0/main} ({weather>/weather/0/description})" />
+            </HBox>
+            <HBox justifyContent="SpaceBetween">
+              <Label text="Humidity:" class="sapUiSmallMarginEnd"/>
+              <Text text="{weather>/main/humidity}%" />
+            </HBox>
+            <HBox justifyContent="SpaceBetween">
+              <Label text="Wind:" class="sapUiSmallMarginEnd"/>
+              <Text text="{weather>/wind/speed} m/s" />
+            </HBox>
+          </VBox>
+        </f:content>
+      </f:Card>
+    </content>
+  </Page>
+</mvc:View>
